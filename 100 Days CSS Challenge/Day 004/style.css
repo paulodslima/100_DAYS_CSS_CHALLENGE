@@ -1,0 +1,87 @@
+#container {
+    width: 400px;
+    height: 400px;
+    background: #5b1515;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.centralizar * {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#circulo1 {
+    background: white;
+    border-radius: 100%;
+    box-shadow: 5px 12px 15px rgba(0, 0, 0, 0.5);
+    animation: surgir1 6s ease;
+    position: absolute;
+}
+
+#circulo2 {
+    background: white;
+    border-radius: 100%;
+    box-shadow: 5px 12px 15px rgba(0, 0, 0, 0.5);
+    animation: surgir2 4s ease;
+    animation-delay: 1s; 
+    position: absolute;
+}
+
+#circulo3 {
+    background: white;
+    border-radius: 100%;
+    box-shadow: 5px 12px 15px rgba(0, 0, 0, 0.5);
+    animation: surgir3 2.5s ease; 
+    animation-delay: 1.5s;
+    position: absolute;
+}
+
+@keyframes surgir1 {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+    50% {
+        width: 130px;
+        height: 130px;
+    }
+    100% {
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@keyframes surgir2 {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+    50% {
+        width: 100px;
+        height: 100px;
+    }
+    100% {
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@keyframes surgir3 {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+    50% {
+        width: 50px;
+        height: 50px; 
+        z-index: 1
+    }
+    100% {
+        width: 0px;
+        height: 0px;
+    }
+}

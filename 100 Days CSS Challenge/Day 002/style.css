@@ -1,0 +1,89 @@
+#container {
+    width: 400px;
+    height: 400px;
+    background: #3FAF82;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#container2 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#linha {
+    height: 10px;
+    width: 100px;
+    background: white;
+    position: absolute;
+    top: 10px;
+}
+
+#linha2 {
+    height: 10px;
+    width: 100px;
+    background: white;
+    position: absolute
+}
+
+#linha3 {
+    height: 10px;
+    width: 100px;
+    background: white;
+    position: absolute;
+    bottom: 10px;
+}
+
+#container2:hover {
+    #linha {
+        top: 45px;
+        transition-duration: 1s;
+        rotate: 45deg;
+    }
+
+    #linha2 {
+        width: 0px;
+        height: 0px;
+        transition-duration: 0.5s;
+    }
+
+    #linha3 {
+        bottom: 45px;
+        transition-duration: 1s;
+        rotate: -45deg;
+    }
+}
+
+#container2:not(:hover) {
+    #linha {
+        height: 10px;
+        width: 100px;
+        background: white;
+        position: absolute;
+        top: 10px;
+        transition-duration: 1s;
+    }
+    
+    #linha2 {
+        height: 10px;
+        width: 100px;
+        background: white;
+        position: absolute;
+        transition-duration: 0.5s;
+    }
+    
+    #linha3 {
+        height: 10px;
+        width: 100px;
+        background: white;
+        position: absolute;
+        bottom: 10px;
+        transition-duration: 1s;
+    }
+}
